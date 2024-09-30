@@ -26,8 +26,8 @@ function App() {
         <>
             <Header />
             <UserInput userInput={userInput} onChangeInputValue={handleChange} />
-            {!isInputValid && <p className="center">Please enter a duration greater than 0</p> }
-            {isInputValid && <Results input={userInput}/>}
+            { !isInputValid && <p className="center">Please enter a duration greater than 0</p> }
+            { isInputValid && <Results input={userInput}/> }
         </>
     )
 }
